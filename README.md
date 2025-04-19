@@ -30,11 +30,8 @@
 
 
 Создание директорий sudo mkdir -p /etc/prometheus /var/lib/prometheus
-image
 
 7.Распаковка архива tar -zxf prometheus-*.linux-amd64.tar.gz
-
-image
 
 Переход в папку cd prometheus-*.linux-amd64
 
@@ -43,8 +40,6 @@ image
 10.Копирование бинарных файлов sudo cp prometheus promtool /usr/local/bin/
 
 10.1 Копирование конфигурационного файла sudo cp prometheus.yml /etc/prometheus/
-
-image
 
 Выход из директории и удаление временных файлов cd .. && rm -rf prometheus-.linux-amd64/ && rm -f prometheus-.linux-amd64.tar.gz
 12.Проверка текущего пути pwd
